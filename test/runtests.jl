@@ -6,9 +6,9 @@ using DataFrames
 using StatsBase
 using GLM
 using Gadfly
+using Statistics
 
 @testset "GLMdiagnostics.jl" begin
-
 
     ##############################################
     # - Write tests for plot_qq
@@ -53,7 +53,8 @@ using Gadfly
 
         # Test #1
         # - Test that object created by function is of type 'Plot'
-        @test typeof(anova_qqplot) == Plot
+
+        @test   typeof(plot_qq(modAov)) == Plot
 
     end # End of testing for plot_qq function
 
