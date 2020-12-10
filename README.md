@@ -7,6 +7,6 @@
 
 ## Introduction 
 
-`GLMdiagnostics' is a `Julia`-language package for assessing model diagnostics for General Linear Models (GLM's). 
+`GLMdiagnostics` is a `Julia`-language package for assessing model diagnostics for General Linear Models (GLM's).
 
 This package is currently under developement. It will (hopefully) be made publicly available on the `Julia` public repository by early 2021. 
