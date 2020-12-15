@@ -23,4 +23,8 @@ export plot_fit_res
 include("plot_scale_loc.jl")
 export plot_scale_loc
 
+# Function #4: Plot all diagnostics plots together
+include("plot_diagnostics.jl")
+export plot_diagnostics
+
 end

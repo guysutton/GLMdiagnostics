@@ -7,6 +7,7 @@ using StatsBase
 using GLM
 using Gadfly
 using Statistics
+using Compose
 
 ##############################################
 # - Simulate data and linear model

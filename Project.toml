@@ -4,6 +4,7 @@ authors = ["Guy F. Sutton", "Rhodes University"]
 version = "0.1.0"
 
 [deps]
+Compose = "a81c6b42-2e10-5240-aca2-a61377ecd94b"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
 GLM = "38e38edf-8417-5370-95a0-9cbb8c7f171a"

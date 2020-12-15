@@ -6,6 +6,6 @@
 
     # Test #1
     # - Test that object created by function is of type 'Plot'
-    @test   typeof(plot_qq(modAov)) == Plot
+    @test   typeof(plot_scale_loc(modAov)) == Plot
 
 end # End of testing for plot_scale_loc function
