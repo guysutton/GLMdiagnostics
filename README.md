@@ -1,4 +1,4 @@
-# GLMdiagnostics
+# GLMdiagnostics.jl
 
 [![Build Status](https://travis-ci.com/guysutton/GLMdiagnostics.jl.svg?branch=master)](https://travis-ci.com/guysutton/GLMdiagnostics.jl)
 [![Build Status](https://ci.appveyor.com/api/projects/status/github/guysutton/GLMdiagnostics.jl?svg=true)](https://ci.appveyor.com/project/guysutton/GLMdiagnostics-jl)
