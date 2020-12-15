@@ -19,4 +19,8 @@ export plot_qq
 include("plot_fit_res.jl")
 export plot_fit_res
 
+# Function #3: Plot scale-location plot
+include("plot_scale_loc.jl")
+export plot_scale_loc
+
 end

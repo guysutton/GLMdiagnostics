@@ -30,4 +30,7 @@ include("test_plot_qq.jl")
 # Source tests for plot_fit_res function
 include("test_plot_fit_res.jl")
 
+# Source tests for plot_scale_loc function
+include("test_plot_scale_loc.jl")
+
 end
