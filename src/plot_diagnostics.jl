@@ -14,6 +14,6 @@ function plot_diagnostics(model)
     p3 = GLMdiagnostics.plot_scale_loc(model)
 
     # Plot all three plots in a single graph
-    all_plots = Compose.hstack(p1, p2, p3)
+    all_plots = Gadfly.hstack(p1, p2, p3)
 
 end
