@@ -15,4 +15,8 @@ import
 include("plot_qq.jl")
 export plot_qq
 
+# Function #2: Plot fitted versus residuals plot
+include("plot_fit_res.jl")
+export plot_fit_res
+
 end
