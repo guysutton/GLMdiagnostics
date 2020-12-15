@@ -9,9 +9,9 @@ function plot_diagnostics(model)
     # Make individual diagnostics plots
     # - These plots are the equivalent of calling plot(...) on a
     #   linear model (e.g. lm, ANOVA) in R.
-    p1 = GLM.diagnostics.plot_qq(model)
-    p2 = GLM.diagnostics.plot_fit_res(model)
-    p3 = GLM.diagnostics.plot_scale_loc(model)
+    p1 = GLMdiagnostics.plot_qq(model)
+    p2 = GLMdiagnostics.plot_fit_res(model)
+    p3 = GLMdiagnostics.plot_scale_loc(model)
 
     # Plot all three plots in a single graph
     all_plots = Compose.hstack(p1, p2, p3)
