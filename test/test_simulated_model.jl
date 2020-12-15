@@ -1,3 +1,14 @@
+using GLMdiagnostics
+using Test
+using Distributions
+using Random
+using DataFrames
+using StatsBase
+using GLM
+using Gadfly
+using Statistics
+using Compose
+
 ###########################################
 # - Create simulated data to test functions
 ###########################################

@@ -1,37 +1,20 @@
-using GLMdiagnostics
-using Test
-using Distributions
-using Random
-using DataFrames
-using StatsBase
-using GLM
-using Gadfly
-using Statistics
-using Compose
-
-##############################################
-# - Simulate data and linear model
-##############################################
-
-# Source simulated linear model to test functions
-include("test_simulated_model.jl")
+using SafeTestsets
 
 ##############################################
 # - Run unit tests
 ##############################################
 
-@testset "GLMdiagnostics.jl" begin
+# Each function has its own .jl file containing a SafeTestset
+# - Using the 'SafeTestsets' approach requires each test set to run as a
+#   stand alone file (e.g. contains its own Using ... packages code for each function).
+# - SafeTestsets runs each test set in its own clean environment - no leakage between
+#   environments and test sets.
 
-# Each function contains unit tests in its own specific .jl files
-# - Source unit tests for each function
+# (1) Test 'plot_qq' function
+@safetestset "test plot_qq" begin include("test_plot_qq.jl") end
 
-# Source tests for plot_qq function
-include("test_plot_qq.jl")
+# (2) Test 'plot_fit_res' function
+@safetestset "test plot_fit_res" begin include("test_plot_fit_res.jl") end
 
-# Source tests for plot_fit_res function
-include("test_plot_fit_res.jl")
-
-# Source tests for plot_scale_loc function
-include("test_plot_scale_loc.jl")
-
-end
+# (3) Test 'plot_scale_loc' function
+@safetestset "test plot_scale_loc" begin include("test_plot_scale_loc.jl") end
